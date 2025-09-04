@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos SQL - Aula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Comandos SQL - Aula</h1>
+        <p class="intro">Aprenda os principais comandos SQL de forma clara e objetiva.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Comandos DDL (Data Definition Language)</h2>
+            <ul>
+                <li><code>CREATE DATABASE</code> - Sempre use para criar tabelas, e é o primeiro passo para organizar os dados.
+                  o comando básico é CREATE DATABASE nome_do_banco_de_dados;
+                  CREATE DATABASE meu_projeto; para MySQL.
+
+                  CREATE DATABASE Database_Test; para SQL Server</li>
+                <li><code>USE</code> - Diz pro sistema em qual banco de dados você quer trabalhar agora. É tipo entrar dentro da pasta que você acabou de criar.</li>
+                <li><code>CREATE TABLE</code> - usado para criar uma nova estrutura de tabela num banco de dados, definindo o nome da tabela e as colunas com seus respetivos tipos de dados e restrições</li>
+                <li><code>ALTER TABLE</code> - Serve para mudar a tabela depois que ela já foi criada. Você pode adicionar colunas, mudar nomes, etc.</li>
+                <li><code>DROP COLUMN</code> - Remove uma coluna de uma tabela.</li>
+                <li><code>DESCRIBE</code> - Mostra a estrutura da tabela, tipo um resumo do que tem dentro.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Comandos DML (Data Manipulation Language)</h2>
+            <ul>
+                <li><code>INSERT INTO</code> - é usado para inserir novos dados em uma tabela.
+                    Ou seja, você cria uma linha (registro) com informações dentro de uma tabela. Dentro disso também tem o Volues que é diz o que você quer colocar (os valores correspondentes a cada coluna).</li>
+                <li><code>UPDATE</code> - serve para alterar dados existentes em uma tabela. Que também usa o SET(define quais colunas serão alteradas e seus novos valores)(usa o where).</li>
+                <li><code>DELETE FROM</code> - serve para remover dados de uma tabela(usa o where, sem ele apaga todos os dados da tabela).
+                
+                    DELETE FROM nome_da_tabela</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Cláusulas de Filtro</h2>
+            <ul>
+                <li><code>WHERE</code> - O WHERE é usado para filtrar registros em uma tabela.
+                    Ou seja, ele permite que você escolha apenas os dados que quer consultar, atualizar ou apagar.
+                    
+                    Sem WHERE, os comandos podem afetar todos os registros da tabela.
+                   <UL> Operadores comuns com WHERE
+
+                   <li> = → igual </li>
+
+                    
+                    <li>> → maior que</li>
+                    
+                    <lI> < → menor que</li>
+                    
+                   <li>>= → maior ou igual</li>
+                    
+                  <li> <= → menor ou igual </li>
+                    
+                  <li>  <> ou != → diferente</li>
+                    
+                  <li>AND → combina duas condições</li>
+                    
+                    <li>→ uma condição ou outra</li>
+                    
+                   <li>NOT → nega uma condição</li>
+                    
+                   <li>LIKE → busca por padrão de texto</li></UL></li>
+
+                <li><code>AND</code>, <code>OR</code>, <code>NOT</code> - 
+                <ul>
+                    AND
+
+<li>Significa “E”.</li>
+
+<li>Só traz os dados que cumpram todas as condições ao mesmo tempo.
+    <img src="Captura de tela 2025-09-04 153424.png" alt="">
+</li>
+OR
+
+<li>Significa “OU”.</li>
+
+<li>Traz os dados que cumpram pelo menos uma das condições.</li>  
+<img src="Captura de tela 2025-09-04 153652.png" alt="">       </ul></li>
+          <li><code>NOT</code> - NOT
+<UL>
+            <li>Significa “NÃO”.</li>
+            
+           <li>Traz os dados que não cumprem a condição.
+            <img src="Captura de tela 2025-09-04 154158.png" alt="">
+           </li></ul>
+
+                <li><code>LIKE</code> -LIKE
+                <ul>
+                   <li> O LIKE serve para procurar valores dentro de colunas de texto.</li>
+
+                   <li>Ele funciona junto com símbolos chamados coringas:</li>
+                    
+                   <li>% → significa qualquer sequência de caracteres</li>
+                    
+                   <li>_ → significa um único caractere</li>
+                   EXEMPLO:
+                   <img src="Captura de tela 2025-09-04 154619.png" alt="">
+                
+                
+                
+                
+                </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Consultas e Relacionamentos</h2>
+            <ul>
+                <li><code>SELECT</code> - O SELECT serve para consultar dados de uma tabela.
+
+                    É o comando mais usado no SQL, porque é ele que busca e mostra as informações.</li>
+                <li><code>JOIN</code> - O JOIN serve para juntar dados de duas (ou mais) tabelas relacionadas.
+
+                    Normalmente, usamos quando temos tabelas diferentes que compartilham uma coluna em comum (ex: id).</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Aula de SQL - Desenvolvido por você</p>
+    </footer>
+</body>
+</html>

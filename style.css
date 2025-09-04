@@ -1,0 +1,113 @@
+/* Estilo geral */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #800020; /* Vermelho vinho */
+    color: #f4f4f4;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px;
+    transition: background-color 0.5s;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 3em;
+    margin: 0;
+    transition: color 0.3s;
+}
+
+header h1:hover {
+    color: #ffd700; /* Dourado ao passar o mouse */
+}
+
+header .intro {
+    font-size: 1.2em;
+    color: #ffd700;
+    margin-top: 10px;
+}
+
+/* Seções */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+section {
+    margin-top: 40px;
+}
+
+section h2 {
+    color: #ffd700;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    transition: color 0.3s;
+}
+
+section h2:hover {
+    color: #ffec8b; /* Dourado claro ao passar o mouse */
+}
+
+/* Listas */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.15em;
+    transition: transform 0.3s, color 0.3s;
+}
+
+li:hover {
+    transform: translateX(5px); /* Pequeno movimento para a direita */
+    color: #ffd700;
+}
+
+/* Comandos SQL */
+code {
+    font-weight: bold;
+    color: #ffd700;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 3px 6px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+code:hover {
+    background: rgba(255, 215, 0, 0.3); /* Destaque suave ao passar o mouse */
+    color: #800020; /* Texto vinho dentro do destaque dourado */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ffd700;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #ffd700;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    li {
+        font-size: 1em;
+    }
+
+    section h2 {
+        font-size: 1.3em;
+    }
+}
