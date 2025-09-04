@@ -1,7 +1,7 @@
-/* Estilo geral */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #800020; /* Vermelho vinho */
+    background-color: #800020; 
     color: #f4f4f4;
     line-height: 1.6;
     margin: 0;
@@ -9,7 +9,6 @@ body {
     transition: background-color 0.5s;
 }
 
-/* Cabeçalho */
 header {
     text-align: center;
     padding: 40px 20px 20px 20px;
@@ -23,7 +22,7 @@ header h1 {
 }
 
 header h1:hover {
-    color: #ffd700; /* Dourado ao passar o mouse */
+    color: #ffd700; 
 }
 
 header .intro {
@@ -52,7 +51,7 @@ section h2 {
 }
 
 section h2:hover {
-    color: #ffec8b; /* Dourado claro ao passar o mouse */
+    color: #ffec8b; 
 }
 
 /* Listas */
@@ -68,7 +67,7 @@ li {
 }
 
 li:hover {
-    transform: translateX(5px); /* Pequeno movimento para a direita */
+    transform: translateX(5px); 
     color: #ffd700;
 }
 
@@ -83,8 +82,8 @@ code {
 }
 
 code:hover {
-    background: rgba(255, 215, 0, 0.3); /* Destaque suave ao passar o mouse */
-    color: #800020; /* Texto vinho dentro do destaque dourado */
+    background: rgba(255, 215, 0, 0.3); 
+    color: #800020;
 }
 
 /* Rodapé */
@@ -111,3 +110,4 @@ footer {
         font-size: 1.3em;
     }
 }
+
